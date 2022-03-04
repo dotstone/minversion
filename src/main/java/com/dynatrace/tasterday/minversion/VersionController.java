@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VersionController {
 
-	@GetMapping(params = "/minSupported")
+	@GetMapping("/minSupported")
 	public String getMinSupportedVersion() {
 		return "The minimal supported version";
 	}
